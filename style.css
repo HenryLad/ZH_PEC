@@ -31,5 +31,21 @@
    margin-bottom: 0rem  !important; 
 }
 .Units{
-   margin-top: 5rem;
+   display: flex;
+   justify-content: center;
 }
+.sel{
+   text-align: center;
+}
+div.accordion-body ul li{
+   list-style-type: none;
+   
+}
+div.accordion-body ul li a{
+   text-decoration: none;
+   color: #000;
+}
+.accordion-button{
+   font-weight: bold;
+}
+ 

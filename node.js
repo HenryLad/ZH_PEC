@@ -17,6 +17,7 @@ function Header() {
    header.innerHTML = `
    <h1>${selcetion.value}</h1>
    `;
+   
 }
 function selectAsHeaderInput(element) {
    var HeaderInput = document.getElementById("HeaderInput");
