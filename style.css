@@ -48,4 +48,7 @@ div.accordion-body ul li a{
 .accordion-button{
    font-weight: bold;
 }
- 
+#pointList li{
+   list-style-type: none;
+   font-size: 1.3rem;
+}
