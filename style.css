@@ -1,0 +1,35 @@
+.achivedval{
+   padding-left: 10rem;
+   padding-right: 10rem;
+   padding-top: 5rem;
+}
+.Header{
+   padding-left: 10rem;
+   padding-right: 10rem;
+   padding-top: 20rem;
+}
+.Header{
+   margin-top: 4rem !important;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.h1{
+   font-size: 3rem;
+   font-weight: 700;
+   color: #000;
+   text-align: center;
+}
+.Heading{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 5rem;
+   font-weight: bold;
+   font-size: 100rem !important;
+   margin-bottom: 0rem  !important; 
+}
+.Units{
+   margin-top: 5rem;
+}
