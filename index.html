@@ -25,7 +25,7 @@
             <a class="nav-link active" aria-current="page" href="index.html">Point Calulator</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Units">Units</a>
+            <a class="nav-link" href="ath.html">Units</a>
           </li>
         </ul>
       </div>
@@ -36,22 +36,22 @@
       Units/Competions
     </button>
     <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="#">100m Sprint (Sekunden)</a></li>
-      <li><a class="dropdown-item" href="#">Weitsprung (Zentimeter)</a></li>
-      <li><a class="dropdown-item" href="#">Kugelstoßen (Meter)</a></li>
-      <li><a class="dropdown-item" href="#">Hochsprung (Zentimeter)</a></li>
-      <li><a class="dropdown-item" href="#">400m Sprint (Sekunden)</a></li>
-      <li><a class="dropdown-item" href="#">110m Hürden (Sekunden)</a></li>
-      <li><a class="dropdown-item" href="#">Diskus (Meter)</a></li>
-      <li><a class="dropdown-item" href="#">Stabhochsprung (Zentimeter)</a></li>
-      <li><a class="dropdown-item" href="#">Speerwurf (Meter)</a></li>
-      <li><a class="dropdown-item" href="#">1500m Lauf (Sekunden)</a></li>
+      <li><a class="dropdown-item" onclick="selectAsHeaderInput(this); return false;" id="HeaderInput">100m Sprint (Sekunden)</a></li>
+      <li><a class="dropdown-item" onclick="selectAsHeaderInput(this); return false;" id="HeaderInput">Weitsprung (Zentimeter)</a></li>
+      <li><a class="dropdown-item" onclick="selectAsHeaderInput(this); return false;" id="HeaderInput">Kugelstoßen (Meter)</a></li>
+      <li><a class="dropdown-item" onclick="selectAsHeaderInput(this); return false;" id="HeaderInput">Hochsprung (Zentimeter)</a></li>
+      <li><a class="dropdown-item" onclick="selectAsHeaderInput(this); return false;" id="HeaderInput">400m Sprint (Sekunden)</a></li>
+      <li><a class="dropdown-item" onclick="selectAsHeaderInput(this); return false;" id="HeaderInput">110m Hürden (Sekunden)</a></li>
+      <li><a class="dropdown-item" onclick="selectAsHeaderInput(this); return false;" id="HeaderInput">Diskus (Meter)</a></li>
+      <li><a class="dropdown-item" onclick="selectAsHeaderInput(this); return false;" id="HeaderInput">Stabhochsprung (Zentimeter)</a></li>
+      <li><a class="dropdown-item" onclick="selectAsHeaderInput(this); return false;" id="HeaderInput">Speerwurf (Meter)</a></li>
+      <li><a class="dropdown-item" onclick="selectAsHeaderInput(this); return false;" id="HeaderInput">1500m Lauf (Sekunden)</a></li>
     </ul>
     
   </div>
   <div class="achivedval">
     <form class="d-flex" role="search" onsubmit="Header(); return false;">
-      <input class="form-control me-2" type="text" placeholder="Enter Competion" aria-label="Search" id="HeaderInput">
+      <input class="form-control me-2" type="text" placeholder="Enter Competion" aria-label="Search" id="Selection">
       <button class="btn btn-outline-success" type="submit">Send Selection</button>
     </form>
   </div>
@@ -71,9 +71,7 @@
 
     </ul>
   </div>
-  <div id="Units">
-
-  </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
