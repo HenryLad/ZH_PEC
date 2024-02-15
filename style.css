@@ -52,3 +52,22 @@ div.accordion-body ul li a{
    list-style-type: none;
    font-size: 1.3rem;
 }
+@media screen and (max-width: 1000px) {
+   div.achivedval{
+      padding-left: 0rem;
+      padding-right: 0rem;
+      padding-top: 3rem;
+   }
+   div.Header{
+      padding-left: 0rem;
+      padding-right: 0rem;
+      padding-top: 3rem;
+   }
+
+}
+#AthInput{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 5rem;
+}

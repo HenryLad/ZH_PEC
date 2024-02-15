@@ -1,3 +1,4 @@
+var Points = 0;
 function Header() {
    var header = document.getElementById("Header");
    var HeaderInput = document.getElementById("HeaderInput");
@@ -38,51 +39,61 @@ function CalPoints100() {
       pointList.innerHTML = `
       <li>The Athlete achvied a total of ${calculatePointsForRunning(25.4347, 18.0, 1.81, calInput.value)}</li>
       `;
+      Points += calculatePointsForRunning(25.4347, 18.0, 1.81, calInput.value);
       break;
       case"Weitsprung (Zentimeter)":
       pointList.innerHTML = `
       <li>The Athlete achvied a total of ${calculatePointsForJumpThrow(0.14354, 220, 1.40, calInput.value)}</li>
       `;
+      Points += calculatePointsForJumpThrow(0.14354, 220, 1.40, calInput.value);
       break;
       case"Kugelstoßen (Meter)":
       pointList.innerHTML = `
       <li>The Athlete achvied a total of ${calculatePointsForJumpThrow(51.39, 1.5, 1.05, calInput.value)}</li>
       `;
+      Points += calculatePointsForJumpThrow(51.39, 1.5, 1.05, calInput.value);
       break;
       case"Hochsprung (Zentimeter)":
       pointList.innerHTML = `
       <li>The Athlete achvied a total of ${calculatePointsForJumpThrow(0.8465, 75, 1.42, calInput.value)}</li>
       `;
+      Points += calculatePointsForJumpThrow(0.8465, 75, 1.42, calInput.value);
       break;
       case"400m Sprint (Sekunden)":
       pointList.innerHTML = `
       <li>The Athlete achvied a total of ${calculatePointsForRunning(1.53775, 82, 1.81, calInput.value)}</li>
       `;
+      Points += calculatePointsForRunning(1.53775, 82, 1.81, calInput.value);
       break;
       case"110m Hürden (Sekunden)":
       pointList.innerHTML = `
       <li>The Athlete achvied a total of ${calculatePointsForRunning(5.74352, 28.5, 1.92, calInput.value)}</li>
       `;
+      Points += calculatePointsForRunning(5.74352, 28.5, 1.92, calInput.value);
       break;
       case"Diskus (Meter)":
       pointList.innerHTML = `
       <li>The Athlete achvied a total of ${calculatePointsForJumpThrow(12.91, 4.0, 1.1, calInput.value)}</li>
       `;
+      Points += calculatePointsForJumpThrow(12.91, 4.0, 1.1, calInput.value);
       break;
       case"Stabhochsprung (Zentimeter)":
       pointList.innerHTML = `
       <li>The Athlete achvied a total of ${calculatePointsForJumpThrow(0.2797, 100, 1.35, calInput.value)}</li>
       `;
+      Points += calculatePointsForJumpThrow(0.2797, 100, 1.35, calInput.value);
       break;
       case"Speerwurf (Meter)":
       pointList.innerHTML = `
       <li>The Athlete achvied a total of ${calculatePointsForJumpThrow(10.14, 7.0, 1.08, calInput.value)}</li>
       `;
+      Points += calculatePointsForJumpThrow(10.14, 7.0, 1.08, calInput.value);
       break;
       case"1500m Lauf (Sekunden)":
       pointList.innerHTML = `
       <li>The Athlete achvied a total of ${calculatePointsForRunning(0.03768, 480, 1.85, calInput.value)}</li>
       `;
+      Points += calculatePointsForRunning(0.03768, 480, 1.85, calInput.value);
       break;
       
    }
@@ -94,4 +105,24 @@ function calculatePointsForRunning(A, B, C, x) {
 // Funktion zur Berechnung von Punkten für Wurf- und Sprungwettbewerbe
 function calculatePointsForJumpThrow(A, B, C, x) {
    return A * Math.pow((x - B), C);
+}
+
+
+function Ath() {
+   const ath = document.getElementById("Ath");
+   const athInput = document.getElementById("AthInput");
+   const Points = 100; // Example value, replace it with your actual points
+   if (ath.value == "") {
+       alert("Please enter a name");
+       return;
+   }
+   athInput.innerHTML = `
+   <div class="card text-bg mb-3" style="max-width: 18rem;">
+       <div class="card-header">Athlete</div>
+       <div class="card-body">
+           <h5 class="card-title">${ath.value}</h5>
+           <p class="card-text">${ath.value} achieved a total of ${Points} Points</p>
+       </div>
+   </div>
+   `;
 }
