@@ -70,4 +70,38 @@ div.accordion-body ul li a{
    justify-content: center;
    align-items: center;
    margin-top: 5rem;
+   text-decoration: none;
+}
+li{
+   list-style-type: none;
+}
+
+table{
+   border-collapse: collapse;
+   width: 90rem;
+   
+}
+thead tr td{
+   padding-bottom: 3rem;
+   font-size: 3rem;
+}
+thead tr td:last-child{
+   text-align: right;
+}
+tbody tr td{
+   font-size: 1.4rem;
+   background-color: #c4c4c4;
+   border-radius: 5px;
+}
+tbody tr td:last-child{
+   text-align: right;
+}
+tbody tr{
+   padding-right: 10rem;
+}
+
+.rankTable{
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }

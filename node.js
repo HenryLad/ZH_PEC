@@ -1,4 +1,3 @@
-var Points = 0;
 function Header() {
    var header = document.getElementById("Header");
    var HeaderInput = document.getElementById("HeaderInput");
@@ -18,12 +17,15 @@ function Header() {
    header.innerHTML = `
    <h1>${selcetion.value}</h1>
    `;
+   selcetion.value = " ";
+
    
 }
 function selectAsHeaderInput(element) {
    var HeaderInput = document.getElementById("HeaderInput");
    var selcetion = document.getElementById("Selection");
    selcetion.value = element.innerText;
+   
  }
 function CalPoints100() {
    var pointList = document.getElementById("pointList");
@@ -106,17 +108,20 @@ function calculatePointsForRunning(A, B, C, x) {
 function calculatePointsForJumpThrow(A, B, C, x) {
    return A * Math.pow((x - B), C);
 }
-
-
+var Points = 0;
+let AlrPlayer = [];
+let i = 0;
 function Ath() {
-   const ath = document.getElementById("Ath");
-   const athInput = document.getElementById("AthInput");
-   const Points = 100; // Example value, replace it with your actual points
-   if (ath.value == "") {
+   var ath = document.getElementById("Ath");
+   var athInput = document.getElementById("AthInput");
+   var Ranking = document.getElementById("Ranking");
+   var Points = 100; // Example value, replace it with your actual points
+   if (ath.value == " ") {
        alert("Please enter a name");
        return;
-   }
-   athInput.innerHTML = `
+   }   
+   athInput.innerHTML   = `
+<li> 
    <div class="card text-bg mb-3" style="max-width: 18rem;">
        <div class="card-header">Athlete</div>
        <div class="card-body">
@@ -124,5 +129,21 @@ function Ath() {
            <p class="card-text">${ath.value} achieved a total of ${Points} Points</p>
        </div>
    </div>
+</li>
    `;
+   
+   if(AlrPlayer.includes(ath.value)){alert("You can't add a Player twice");}
+   else{ AlrPlayer.push(ath.value); i++;
+   Ranking.innerHTML += `
+   <td>${ath.value}</td> <td>${Points} Points</td>
+   `;
+   ath.value = " ";
+}
+}
+
+function writeJson(){
+   alert("Not yet implemented");
+}
+function readJson(){
+   alert("Not yet implemented");
 }
